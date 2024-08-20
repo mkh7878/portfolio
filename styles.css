@@ -13,6 +13,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    color: white;
 }
 
 h1 {
@@ -73,8 +74,6 @@ font-family: 'Courier New', Courier, monospace;
     color: inherit;
     z-index: 1001; /* Keep link content above the background */
 }
-
-
 
 /* Main Content Styles */
 main {
@@ -331,7 +330,7 @@ main {
 }
 
 .experience-icon{
-    height: 150px;
+    height: 100px;
     width: auto;
 }
 
@@ -357,3 +356,25 @@ main {
     50% { border-color: black; } /* Show caret */
 }
 
+/*------- SPIN ---------- */
+
+
+.spinning-image {
+    width: 100px; /* Start width */
+    height: auto; /* Keep height constant */
+    transition: transform 1s ease-in-out;
+    transform-origin: left; /* Animate from the left edge */
+}
+
+.spinning-image:hover {
+    animation: scaleWidth 2s infinite;
+}
+
+@keyframes scaleWidth {
+    0%, 100% {
+        transform: scaleX(1); /* Width at 100px */
+    }
+    50% {
+        transform: scaleX(0); /* Width at 0px */
+    }
+}
