@@ -18,12 +18,13 @@ body, html {
 
 h1 {
 font-family: 'Courier New', Courier, monospace;
-font-size: 3vw;
+font-size: 4vw;
+font-weight: 900;
 }
 
 h2 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3.2vw;
+    font-size: 3.7vw;
     color: black;
     }
 
@@ -37,6 +38,7 @@ h3 {
 
 p{
 font-family: 'Courier New', Courier, monospace;
+font-size: 1.5vw;
 }
 
 a{
@@ -57,8 +59,9 @@ a{
 }
 
 /* Header Styling */
-.header {
-    color: #fff;
+.hello {
+    color: #000;
+    margin-top: 8vw;
     padding: 10px 0;
     width: 100%;
     position: -webkit-sticky; /* For Safari */
@@ -69,13 +72,12 @@ a{
     text-align: center; /* Center the text horizontally */
 }
 
-#header-background {
+#hello-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 5vw;
-    background-color: rgba(68, 68, 68, 0.6); /* Background color */
     transition: opacity 0.8s ease; /* Smooth fade-in */
     z-index: -1; /* Ensure it is behind the header content */
 }
