@@ -39,6 +39,10 @@ p{
 font-family: 'Courier New', Courier, monospace;
 }
 
+a{
+    color:#000;
+}
+
 
 .background {
     position: fixed;
