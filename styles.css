@@ -3,9 +3,13 @@ body{
 }
 
 .container {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 0 20px; /* Optional: Adds padding on the sides */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+.row {
+    /* border: 1px solid red; */
 }
 
 h1 {
@@ -17,7 +21,7 @@ h1 {
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: clamp(30px, 5.8vw, 80px);
+    font-size: clamp(24px, 4vw, 70px);
 }
 
 h3 {
@@ -67,4 +71,45 @@ p {
 #meaghan-name {
     margin-top: 10vw;
     text-align: center;
+}
+
+/* OTHER TEXT STYLING */
+
+#chatbot-description {
+    margin-top: 5vw;
+    margin-left: 4.5vw;
+    text-align: center;
+}
+
+/* BUTTONS STYLING */
+.button {
+    background-color: rgba(255, 255, 255, 0.44); /* White background with 44% opacity */
+    color: black; /* Black text color */
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 20px;
+    border: 2px solid black; /* Black border */
+    padding: 5px 25px; /* Padding for the button */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Fit content width */
+    border-radius: 5px; /* Optional: rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+}
+
+.cloud-dog {
+    width: 150px; /* Set to your image width */
+    height: 150px; /* Set to your image height */
+    background-image: url('assets/homepage/cloud.png');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease; /* Smooth transition for background image */
+}
+
+.cloud-dog:hover {
+    background-image: url('assets/homepage/cloud-bark.png'); /* Image on hover */
 }

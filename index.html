@@ -14,9 +14,6 @@
 
 <body>
     <div class="container">
-
-
-
     <header class="header">
         <div class="menu-bar">
             <a href="index.html">Home</a>
@@ -44,22 +41,30 @@
         <div class="col-12 col-md-5 d-none d-md-block" style="padding-top: 5vw;">
             <img src="assets/homepage/greylaptop.png" alt="illustration of laptop" style="width: 100%; height:auto;">
         </div>
-        </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-12 col-md-5 col-lg-5">
+        <div class="col-12 d-none d-md-block col-md-5 col-lg-5" id="chatbot-description">
             <h2> ChatBot!</h2>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="cloud-dog"></div>
+                </div>
+                <div class="col-8">
+                    <p style="text-align: left;">
+                        <br><br>I made this chat bot trained on my professional experience and CV. Ask a question about my qualifications or resume!
+                    </p>
+                </div>
+            </div>
             <p>
-                I made this chat bot trained on my professional experience and CV. Ask a question about my qualifications or resume! 
-                <br>Question Ideas:<br>What are Meaghans technical skills?<br>What is Meaghanss work style?
-                <br><br>How did I make this bot? 
-
- 
-
-
+                <br><br>Question Ideas:
+                <br><i>What are Meaghan's technical skills?</i>
+                <br><i>What is Meaghan's work style?</i>
             </p>
+            <a href="#" class="button" style="margin-top: 20px;">More about ChatBot Project</a>
         </div>
+
         <div class="col-sm-12 col-md-6 col-lg-6">
         <iframe src="https://meaghanresume-c460818a7eaa.herokuapp.com/" width="100%" height="600px" style="border:none;">
             <a href="https://meaghanresume-c460818a7eaa.herokuapp.com/">Your browser does not support iframes. 
@@ -67,14 +72,28 @@
         </iframe>
         </div>
 
+        <div class="col-12 d-block d-md-none" id="chatbot-description">
+            <h2> ChatBot!</h2>
+
+            <div class="row">
+                <div class="col-4">
+                    <div class="cloud-dog"></div>
+                </div>
+                <div class="col-8">
+                    <p style="text-align: left;">
+                        I made this chat bot trained on my professional experience and CV. Ask a question about my qualifications or resume!
+                        <br><br>Question Ideas:
+                        <br><i>What are Meaghan's technical skills?</i>
+                        <br><i>What is Meaghan's work style?</i>
+                    </p>
+                </div>
+            </div>
+            <a href="https://github.com/mkh7878/meaghan-resume/tree/main" class="button" style="margin-top: 20px;">More about ChatBot Project</a>
+        </div>
+
     </div>
 
 
-
-    
-
-    
-    
 
     <!-- <div class="col-12">
         <div class="container">
@@ -114,51 +133,6 @@
             </div>
         </div>
     </div>  -->
-
-
-</div>
-
-
-
-
-<script>
-    console.log('Script is running');
-
-    function updateRectangleColors(mouseX, mouseY) {
-        const rows = document.querySelectorAll('.row-container');
-        const windowHeight = window.innerHeight;
-        const windowWidth = window.innerWidth;
-
-        const rowHeight = windowHeight / 6;
-        const colWidth = windowWidth / 6;
-
-        rows.forEach((row, rowIndex) => {
-            const rectangles = row.querySelectorAll('.rectangle');
-            
-            rectangles.forEach((rectangle, colIndex) => {
-                rectangle.classList.remove('active');
-                
-                const rowTop = rowHeight * rowIndex;
-                const rowBottom = rowHeight * (rowIndex + 1);
-                const colLeft = colWidth * colIndex;
-                const colRight = colWidth * (colIndex + 1);
-                
-                if (mouseY >= rowTop && mouseY < rowBottom && mouseX >= colLeft && mouseX < colRight) {
-                    rectangle.classList.add('active');
-                }
-            });
-        });
-    }
-
-    document.addEventListener('mousemove', (event) => {
-        const mouseX = event.clientX;
-        const mouseY = event.clientY;
-        updateRectangleColors(mouseX, mouseY);
-    });
-
-    // Initial check
-    updateRectangleColors(window.innerWidth / 2, window.innerHeight / 2); // Set initial position to the middle of the viewport
-</script>
-</div>
-    </body>
+    </div>
+</body>
 </html>
