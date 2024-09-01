@@ -6,106 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meaghan Horak Designer and Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+
+
 
     <header class="header">
-        <div id="header-background"></div> <!-- Separate div for background -->
-        <a href="index.html" class="header-link">
-            <h1 class="typing-container">&lt;!-- Hello, my name is Meaghan --&gt;</h1>
-        </a>
+        <div class="menu-bar">
+            <a href="index.html">Home</a>
+            <div class="separator"></div>
+            <a href="#">ChatBot</a>
+            <div class="separator"></div>
+            <a href="#">About</a>
+            <div class="separator"></div>
+            <a href="#">GitHub</a>
+            <div class="separator"></div>
+            <a href="#">LinkedIn</a>
+        </div>
     </header>
-    
-    <div class="background">
-        <!-- 6x1 grid of rows, each containing 6 rectangles -->
-        <div class="row-container">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
+
+    <div class="row" id="introduction">
+        <div class="col-sm-12 col-md-7 col-lg-7">
+            <div id="meaghan-name">
+                <h1>Meaghan Horak</h1>
+                <h3>designer & developer</h3 >
+                <p style="padding: 40px">I design and code immersive, accessible digital experiences, 
+                combining my programming skills with my background in the arts.</p>
+            </div>
+            
         </div>
-        <div class="row-container">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
+        <div class="col-12 col-md-5 d-none d-md-block" style="padding-top: 5vw;">
+            <img src="assets/homepage/greylaptop.png" alt="illustration of laptop" style="width: 100%; height:auto;">
         </div>
-        <div class="row-container">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-        </div>
-        <div class="row-container">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-        </div>
-        <div class="row-container">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-        </div>
-        <div class="row-container">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
         </div>
     </div>
 
-<div class="row">
+    <div class="row">
+        <div class="col-sm-12 col-md-5 col-lg-5">
+            <h2> ChatBot!</h2>
+            <p>
+                I made this chat bot trained on my professional experience and CV. Ask a question about my qualifications or resume! 
+                <br>Question Ideas:<br>What are Meaghans technical skills?<br>What is Meaghanss work style?
+                <br><br>How did I make this bot? 
 
-    <!-- <div class="col-5">
-        <div class="my-links">
-            <div class="link-item projects">
-                <div class="loading-bar project-bar">
-                    <h3>Projects</h3>
-                </div>
-            </div>
-            <div class="link-item resume">
-                <div class="loading-bar resume-bar">
-                    <h3>Resume</h3>
-                </div>
-            </div>
-            <div class="link-item contact">
-                <div class="loading-bar contact-bar">
-                    <h3>Contact</h3>
-                </div>
-            </div>
+ 
+
+
+            </p>
         </div>
-    </div> -->
-    
-    <div class="col-12">
-            <!-- Embed the Heroku app using an iframe -->
-    <iframe src="https://your-heroku-app.herokuapp.com" width="100%" height="600px" style="border:none;">
-        Your browser does not support iframes.
-    </iframe>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+        <iframe src="https://meaghanresume-c460818a7eaa.herokuapp.com/" width="100%" height="600px" style="border:none;">
+            <a href="https://meaghanresume-c460818a7eaa.herokuapp.com/">Your browser does not support iframes. 
+                Click here to see ChatBot.</a>
+        </iframe>
+        </div>
+
     </div>
+
+
+
+    
+
     
     
 
-    <div class="col-12">
+    <!-- <div class="col-12">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="device">
-                    <!-- Device Views -->
+              
                     <div class="device-view smartphone-view">
                         <div class="smartphone">
                             <div class="camera"></div>
@@ -138,30 +113,13 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>  -->
 
 
 </div>
 
 
-<!-- <div class="row" id="portfolio-row">
-    <div class="col-12">
-        <h2>Experience</h2>
-    </div>
 
-    <div class="col-3">
-        
-    </div>
-    <div class="col-6">
-        <div class="experience-box">
-            <img src="HPExperience/white ring.png" class="spinning-image">
-                <p class="typing-text">Digital Experience Specialist</p>
-                       
-        </div>
-    </div>
-    </div>
-
-</div> -->
 
 <script>
     console.log('Script is running');
@@ -201,6 +159,6 @@
     // Initial check
     updateRectangleColors(window.innerWidth / 2, window.innerHeight / 2); // Set initial position to the middle of the viewport
 </script>
-
+</div>
     </body>
 </html>
