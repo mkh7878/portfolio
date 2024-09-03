@@ -360,3 +360,25 @@ p {
         opacity: 1; /* Fully visible */
     }
 }
+
+
+/* BUTTONS STYLING */
+.tools-button {
+    background-color: rgba(255, 255, 255, 0.44); /* White background with 44% opacity */
+    color: black; /* Black text color */
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    border: 2px solid white; /* Black border */
+    padding: 3px 10px; /* Padding for the button */
+    text-align: center; /* Center align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* .button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border-color: #69BCC0;
+} */
