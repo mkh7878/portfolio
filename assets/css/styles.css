@@ -21,13 +21,13 @@ a {
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: clamp(40px, 6vw, 80px);
+    font-size: clamp(40px, 6vw, 75px);
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: clamp(30px, 4vw, 70px);
+    font-size: clamp(30px, 4vw, 60px);
 }
 
 h3 {
@@ -80,7 +80,7 @@ p {
 /* INTRUDUCTION FOR TOP OF HOMEPAGE */
 
 #meaghan-name {
-    margin-top: 7vw;
+    margin-top: 5.5vw;
     text-align: center;
 }
 
@@ -116,14 +116,14 @@ p {
 .cloud-dog {
     width: 150px; /* Set to your image width */
     height: 150px; /* Set to your image height */
-    background-image: url('../assets/homepage/cloud.png');
+    background-image: url('/assets/cloud-dog/cloud-sit.png');
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease; /* Smooth transition for background image */
 }
 
 .cloud-dog:hover {
-    background-image: url('../assets/homepage/cloud-bark.png'); /* Image on hover */
+    background-image: url('/assets/cloud-dog/cloud-bark.png'); /* Image on hover */
 }
 
 
