@@ -12,7 +12,6 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
-theme: minima  # or another Jekyll theme you're using
 
 # Specify the plugins used
 plugins:
