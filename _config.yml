@@ -1,0 +1,26 @@
+# _config.yml
+
+# Site title and description
+title: Meaghan Horak Portfolio
+description: Designer & Developer Portfolio
+
+# URL of your site
+url: "https://meaghanhorak.com"
+
+# Base URL (for GitHub Pages, this is usually "/")
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima  # or another Jekyll theme you're using
+
+# Specify the plugins used
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files or directories from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

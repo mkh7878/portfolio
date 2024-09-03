@@ -2,6 +2,8 @@
 
 Welcome to my portfolio website! This site showcases my work and skills as a designer and developer. It was built using a combination of Bootstrap, Jekyll, HTML, and CSS to create a responsive and visually appealing online presence.
 
+The website is live here [Meaghan's Portfolio Site](https://meaghanhorak.com).
+
 ## Features
 
 - **Bootstrap**: For responsive design and layout.
