@@ -23,7 +23,7 @@ h1 {
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: clamp(24px, 4vw, 70px);
+    font-size: clamp(30px, 4vw, 70px);
 }
 
 h3 {
@@ -33,14 +33,14 @@ h3 {
 
 h4 {
     font-family: 'Sue Ellen Francisco', cursive;
-    font-size: clamp(20px, 2.5vw, 60px);
+    font-size: clamp(25px, 2.5vw, 60px);
 }
 
 /* Font styling for p */
 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400; /* Regular weight for Roboto */
-    font-size: clamp(10px, 1.5vw, 15px);
+    font-size: clamp(15px, 1.5vw, 15px);
 }
  /* MENU BAR */
 
@@ -112,14 +112,14 @@ p {
 .cloud-dog {
     width: 150px; /* Set to your image width */
     height: 150px; /* Set to your image height */
-    background-image: url('assets/homepage/cloud.png');
+    background-image: url('../assets/homepage/cloud.png');
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease; /* Smooth transition for background image */
 }
 
 .cloud-dog:hover {
-    background-image: url('assets/homepage/cloud-bark.png'); /* Image on hover */
+    background-image: url('../assets/homepage/cloud-bark.png'); /* Image on hover */
 }
 
 
@@ -314,4 +314,45 @@ p {
 .job-desc {
     padding-top: 30px;
     text-align: left;
+}
+
+
+/* typing effect */
+
+.typing-container {
+    overflow: hidden; /* Ensures the text is hidden initially */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    border-right: 3px solid black; /* Creates a cursor effect */
+    width: 0; /* Starts with zero width */
+    animation: typing 4s steps(30, end) forwards, hide-caret 0.1s forwards 4s; /* Apply typing and then hide cursor */
+}
+
+.typing-text {
+    display: inline; /* Keeps text in a single line */
+}
+
+@keyframes typing {
+    from { width: 0; } /* Starts with no text */
+    to { width: 100%; } /* Expands to full width */
+}
+
+@keyframes hide-caret {
+    from { border-right: 3px solid black; }
+    to { border-right: none; }
+}
+
+/* fade in effect */
+
+.fade-in-text {
+    opacity: 0; /* Start with the text hidden */
+    animation: fadeIn 2s ease-in forwards; /* 2-second fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+    }
 }
