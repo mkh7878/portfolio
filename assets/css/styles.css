@@ -17,6 +17,10 @@ a {
     /* border: 1px solid red; */
 }
 
+/* .col-12 {
+    border: 1px solid red;
+} */
+
 
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -375,3 +379,62 @@ p {
     background-color: rgba(255, 255, 255, 1);
     border-color: #69BCC0;
 } */
+
+.image-container {
+    width: 100%;
+    height: auto; /* Let the container's height adjust automatically */
+    padding-top: 100%; /* Aspect ratio of 1:1 for square images; adjust for different ratios */
+    background-size: contain; /* Ensures the image fits inside the container */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+
+/* Hover effects using IDs */
+#image-round {
+    background-image: url('/assets/gemvara//shape/round.png');
+}
+#image-round:hover {
+    background-image: url('/assets/gemvara/shape-hover/round-hover.png');
+}
+
+#image-cushion {
+    background-image: url('/assets/gemvara//shape/cushion.png');
+}
+
+#image-cushion:hover {
+    background-image: url('/assets/gemvara/shape-hover/cushion-hover.png');
+}
+
+#image-heart {
+    background-image: url('/assets/gemvara/shape/heart.png');
+}
+
+    #image-heart:hover {
+    background-image: url('/assets/gemvara/shape-hover/heart-hover.png');
+}
+
+#image-marquise {
+    background-image: url('/assets/gemvara//shape/marquise.png');
+}
+
+#image-marquise:hover {
+    background-image: url('/assets/gemvara/shape-hover/marquise-hover.png');
+}
+
+#image-oval {
+    background-image: url('/assets/gemvara//shape/oval.png');
+}
+
+#image-oval:hover {
+    background-image: url('/assets/gemvara/shape-hover/oval-hover.png');
+}
+
+#image-pear {
+    background-image: url('/assets/gemvara/shape/pear.png');
+}
+
+#image-pear:hover {
+    background-image: url('/assets/gemvara/shape-hover/pear-hover.png');
+}
