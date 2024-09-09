@@ -3,3 +3,92 @@ layout: default
 title: Experience
 ---
 
+<div class="row">
+    <div class="col-12" style=" padding-left: 10vw; padding-right: 10vw;">
+        <h3>Synesthetic Composition</h3>
+        <div class="col-12">
+            <img src="/assets/syncomp/output_selected.jpg" style="width: 100%; height: auto; padding-top: 30px;">
+        </div>
+        <div class="job-desc">
+            <p>
+                My master's dissertation involved the development of the Synesthetic Composition application (SynComp App), a Python-based tool designed to create a synesthetic experience by linking musical input with dynamic visual output.
+            </p>
+        </div>
+        <div class="col-12">
+            <h5> Development Environment </h5>
+        </div>
+        <div class="col-12" style="padding-top: 5px;">
+            <div class="tools-button">Language: Python</div>
+            <div class="tools-button">Pycharnm IDE</div>  
+        </div>
+        <div class="col-12" style="padding-top: 20px;">
+            <h5> Core Libraries </h5>
+        </div>
+        <div class="col-12" style="padding-top: 5px;">
+            <div class="tools-button">Mido</div>
+            <div class="tools-button">Kivy</div>  
+            <div class="tools-button">MatPlotLib</div>
+            <div class="tools-button">PyFluidSynth</div>            
+            <div class="tools-button">OpenCV</div>  
+        </div>
+    </div>
+    <div class="col-12">
+        <img src="/assets/syncomp/midi.png" style="width: 20%; height: auto; padding-top: 30px;">
+        
+    </div>
+    <div class="col-12">
+        <a href="https://github.com/mkh7878/synesthetic_composition" target="_blank" class="button" style="margin-top: 20px; width: auto;">Github Repo</a>
+    </div>
+    
+    
+
+</div>
+<div class="row">
+    <div class="col-12" style="padding-top: 40px;">
+        <h3>Functionality</h3>
+    </div>
+    <div class="row" style="padding-top: 30px;">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h5>MIDI and Audio Integration: </h5>
+            <p>
+                The SynComp App utilizes the 'mido' library to receive MIDI signals and 'fluidsynth' to play corresponding piano sounds, enabling real-time interaction with the MIDI keyboard.
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h5>Key and Mood Analysis:  </h5>
+            <p>
+                The application analyzes the key and mood of the music by examining the frequency and type of intervals played. It uses this data to adjust the visual representation in real-time.
+            </p>
+        </div>
+        
+    </div>
+    <div class="row" style="padding-top: 30px;">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="/assets/syncomp/output_grid.jpg" style="width: 50%; height: auto;">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="/assets/syncomp/moods.jpg" style="width: 50%; height: auto;">
+        </div>
+    </div>
+    <div class="row" style="padding-top: 30px;">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h5>Visual Output: </h5>
+            <p>
+                The app utilizes a 30x30 grid to represent mood states, transitioning through four distinct impressionist seascapes based on the music's mood. This transformation is achieved through incremental image morphing.
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h5>CSV Data Logging:</h5>
+            <p>
+                In addition to generating real-time visuals, the application saves CSV files containing the intervals played. This data can be used for further analysis and is aligned with other collected participant data to evaluate patterns in music perception and mood.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row" style="padding-top: 50px;">
+    <h3>Application Structure</h3>
+    <p>This graphic gives a visual understanding of how the app is structured and how the modules interact with each other.</p>
+    <div class="col-12">
+        <img src="/assets/syncomp/flow.jpg" style="width: 80%; height: auto;">
+    </div>
+</div>
