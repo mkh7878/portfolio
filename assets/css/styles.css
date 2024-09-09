@@ -390,6 +390,20 @@ p {
     transition: background-image 0.3s ease;
 }
 
+.image-container-gemstones {
+    width: 100%;
+    height: auto; /* Let the container's height adjust automatically */
+    padding-top: 100%; /* Aspect ratio of 1:1 for square images; adjust for different ratios */
+    background-size: contain; /* Ensures the image fits inside the container */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: scale 0.3s ease;
+}
+
+.image-container-gemstones:hover {
+    scale: 110%;
+
+}
 
 /* Hover effects using IDs */
 #image-round {
@@ -438,3 +452,48 @@ p {
 #image-pear:hover {
     background-image: url('/assets/gemvara/shape-hover/pear-hover.png');
 }
+
+#gem-white-stone {
+    background-image: url('/assets/gemvara/gemstones/white_stone.png');
+}
+
+#gem-emerald {
+    background-image: url('/assets/gemvara/gemstones/emerald.png');
+}
+
+#gem-onyx {
+    background-image: url('/assets/gemvara/gemstones/onyx.png');
+}
+
+#gem-morganite {
+    background-image: url('/assets/gemvara/gemstones/morganite.png');
+}
+
+#gem-ruby {
+    background-image: url('/assets/gemvara/gemstones/ruby.png');
+}
+
+#gem-lbtopaz {
+    background-image: url('/assets/gemvara/gemstones/lbtopaz.png');
+}
+
+#gem-sapphire {
+    background-image: url('/assets/gemvara/gemstones/sapphire.png');
+}
+
+#gem-aquamarine {
+    background-image: url('/assets/gemvara/gemstones/aquamarine.png');
+}
+
+#gem-peridot {
+    background-image: url('/assets/gemvara/gemstones/peridot.png');
+}
+
+#gem-amethyst {
+    background-image: url('/assets/gemvara/gemstones/amethyst.png');
+}
+
+#gem-alexandrite {
+    background-image: url('/assets/gemvara/gemstones/alexandrite.png');
+}
+
